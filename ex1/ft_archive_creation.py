@@ -27,6 +27,7 @@ def ft_transform(txt: str) -> None:
         fd = open(new_file, "w")
         fd.write(saved)
         print(f"Data saved in file '{new_file}'")
+        fd.close()
     else:
         print("Not saving data.")
 
